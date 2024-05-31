@@ -1,0 +1,95 @@
+/* Note.css */
+
+.note-container {
+
+  justify-content: space-between;
+  background-color: #f6f6f6;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 20px auto;
+  width: 80%; /* Adjust the width of the container */
+  max-width: 500px; /* Set maximum width to avoid stretching on larger screens */
+}
+
+.note-header {
+  color: #333;
+  text-align: center;
+}
+
+.input-container {
+  margin-bottom: 20px;
+}
+
+.note-input {
+  width: calc(100% - 80px); /* Adjust the width of the input field */
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.add-button {
+  
+  background-color: #1abc9c;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.add-button:hover {
+  background-color: #16a085;
+}
+
+.note-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.note-item {
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  position: relative; /* Add position relative to the note item */
+}
+
+.note-text {
+  font-size: 14px; /* Adjust the font size of the note content */
+}
+
+.button-container {
+  position: absolute; /* Make the button container absolute to position it relative to the note item */
+  bottom: 10px; /* Adjust the distance from the bottom */
+  right: 10px; /* Adjust the distance from the right */
+}
+
+.delete-button,
+.edit-button {
+  float: right;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px; /* Adjust padding to increase button size */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 12px; /* Adjust font size to reduce button text size */
+  margin-left: 15px; /* Add margin between buttons */
+}
+
+.delete-button {
+  background-color: #e74c3c; /* Set delete button color to red */
+}
+
+.edit-button {
+  background-color: #3498db; /* Set edit button color to blue */
+}
+
+.delete-button:hover,
+.edit-button:hover {
+  background-color: #c0392b; /* Change button color on hover */
+}
